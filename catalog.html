@@ -10,7 +10,7 @@
   <header class="header">
     <nav class="header__nav nav-header">
       <a class="nav-header__link" href="index.html">
-        <img class="header-nav__logo" src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси">
+        <img class="header-nav__logo" src="img/gllacy.svg" width="154" height="64" alt="Логотип магазина Глейси">
       </a>
       <ul class="nav-header__list">
         <li class="nav-header__item">
@@ -57,13 +57,13 @@
         </li>
       </ul>
     </nav>
-    <a class="search header__search" aria-label="Открыть окно поиска">
+    <p class="search header__search">
       <label class="search__window">
         <span class="visually-hidden">Окно поиска</span>
         <input class="search__input" type="search" placeholder="Что ищем?" name="search">
       </label>
-    </a>
-    <a class="log header__log">
+    </p>
+    <div class="log header__log">
       Вход
       <form class="form-log header__form-log" action="https://echo.htmlacademy.ru" method="get">
         <input class="form-log__input" type="email" placeholder="Электронная почта" name="email">
@@ -72,57 +72,59 @@
         <a class="form-log__link">Забыли пароль?</a>
         <a class="form-log__link">Новая регистрация</a>
       </form>
-    </a>
-    <a class="cart header__cart cart_have">2 товара</a>
-    <div class="cart-box">
-      <table class="cart-box__table">
-        <tr class="cart-box__row cart-item">
-          <td class="cart-item__data">
-            <button class="cart-item__close" aria-label="Убрать мороженое"></button>
-          </td>
-          <td class="cart-item__data">
-            <img class="cart-item__img" src="img/prod1.jpg" width="33" height="33" alt="Мороженка...">
-          </td>
-          <td class="cart-item__data">
-            Пломбир с апельсиновым джемом
-          </td>
-          <td class="cart-item__data">
-            <span class="cart-item__weight">1,5 кг </span>
-            <span class="cart-item__price">х 200 руб.</span>
-          </td>
-          <td class="cart-item__data">
-            300 руб.
-          </td>
-        </tr>
-        <tr class="cart-box__row cart-item">
-          <td class="cart-item__data">
-            <button class="cart-item__close" aria-label="Убрать мороженое"></button>
-          </td>
-          <td class="cart-item__data">
-            <img class="cart-item__img" src="img/prod1.jpg" width="33" height="33" alt="Мороженка...">
-          </td>
-          <td class="cart-item__data">
-            Клубничный пломбир с присыпкой
-            из белого шоколада
-          </td>
-          <td class="cart-item__data">
-            <span class="cart-item__weight">1,5 кг </span>
-            <span class="cart-item__price">х 300 руб.</span>
-          </td>
-          <td class="cart-item__data">
-            450 руб.
-          </td>
-        </tr>
-      </table>
-      <p class="cart-box__result">
-        Итог:
-        <input class="cart-box__input" type="text" value="750 руб." disabled>
-      </p>
-      <a class="button cart-box-button" href="#">Оформить заказ</a>
+    </div>
+    <div class="cart header__cart cart_have">
+      2 товара
+      <div class="cart-box">
+        <table class="cart-box__table">
+          <tr class="cart-box__row cart-item">
+            <td class="cart-item__data">
+              <button class="cart-item__close" aria-label="Убрать мороженое"></button>
+            </td>
+            <td class="cart-item__data">
+              <img class="cart-item__img" src="img/product-cart1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+            </td>
+            <td class="cart-item__data">
+              Пломбир с апельсиновым джемом
+            </td>
+            <td class="cart-item__data">
+              <span class="cart-item__weight">1,5 кг </span>
+              <span class="cart-item__price">х 200 руб.</span>
+            </td>
+            <td class="cart-item__data">
+              300 руб.
+            </td>
+          </tr>
+          <tr class="cart-box__row cart-item">
+            <td class="cart-item__data">
+              <button class="cart-item__close" aria-label="Убрать мороженое"></button>
+            </td>
+            <td class="cart-item__data">
+              <img class="cart-item__img" src="img/product-cart2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+            </td>
+            <td class="cart-item__data">
+              Клубничный пломбир с присыпкой
+              из белого шоколада
+            </td>
+            <td class="cart-item__data">
+              <span class="cart-item__weight">1,5 кг </span>
+              <span class="cart-item__price">х 300 руб.</span>
+            </td>
+            <td class="cart-item__data">
+              450 руб.
+            </td>
+          </tr>
+        </table>
+        <p class="cart-box__result">
+          Итог:
+          <input class="cart-box__input" type="text" value="750 руб." disabled>
+        </p>
+        <a class="button cart-box-button" href="#">Оформить заказ</a>
+      </div>
     </div>
     <p class="org-info header__org-info">
       С 10 до 20, ежедневно
-      <a class="org-info__phone" href="tel:8 812 450-25-25">8 812 450-25-25</a>
+      <a class="org-info__phone" href="tel:+8(812)450-25-25">8 812 450-25-25</a>
     </p>
   </header>
   <main class="catalog-page content ">
@@ -151,7 +153,7 @@
     <section class="main-catalog">
       <ul class="catalog__list">
         <li class="catalog__item item-catalog flag flag_hit">
-          <img class="item-catalog__img" src="img/prod1.jpg" alt="Мороженка..." width="267" height="267">
+          <img class="item-catalog__img" src="img/product1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
           <p class="item-catalog__price">
             310 ₽ /
             <span class="item-catalog__weight">кг</span>
@@ -162,7 +164,7 @@
           </a>
         </li>
         <li class="catalog__item item-catalog flag flag_hit">
-          <img class="item-catalog__img" src="img/prod1.jpg" alt="Мороженка..." width="267" height="267">
+          <img class="item-catalog__img" src="img/product2.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
           <p class="item-catalog__price">
             380 ₽ /
             <span class="item-catalog__weight">кг</span>
@@ -173,7 +175,7 @@
           </a>
         </li>
         <li class="catalog__item item-catalog flag flag_hit">
-          <img class="item-catalog__img" src="img/prod1.jpg" alt="Мороженка..." width="267" height="267">
+          <img class="item-catalog__img" src="img/product3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
           <p class="item-catalog__price">
             355 ₽ /
             <span class="item-catalog__weight">кг</span>
@@ -184,7 +186,7 @@
           </a>
         </li>
         <li class="catalog__item item-catalog flag flag_hit">
-          <img class="item-catalog__img" src="img/prod1.jpg" alt="Мороженка..." width="267" height="267">
+          <img class="item-catalog__img" src="img/product4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
           <p class="item-catalog__price">
             415 ₽ /
             <span class="item-catalog__weight">кг</span>
@@ -195,7 +197,7 @@
           </a>
         </li>
         <li class="catalog__item item-catalog flag flag_hit">
-          <img class="item-catalog__img" src="img/prod1.jpg" alt="Мороженка..." width="267" height="267">
+          <img class="item-catalog__img" src="img/product5.png" alt="Сливочное с брусничным джемом" width="267" height="267">
           <p class="item-catalog__price">
             325 ₽ /
             <span class="item-catalog__weight">кг</span>
@@ -207,7 +209,7 @@
           </a>
         </li>
         <li class="catalog__item item-catalog flag flag_hit">
-          <img class="item-catalog__img" src="img/prod1.jpg" alt="Мороженка..." width="267" height="267">
+          <img class="item-catalog__img" src="img/product6.png" alt="Сливочно-черничное с цельными ягодами черники" width="267" height="267">
           <p class="item-catalog__price">
             410 ₽ /
             <span class="item-catalog__weight">кг</span>
@@ -218,7 +220,7 @@
           </a>
         </li>
         <li class="catalog__item item-catalog flag flag_hit">
-          <img class="item-catalog__img" src="img/prod1.jpg" alt="Мороженка..." width="267" height="267">
+          <img class="item-catalog__img" src="img/product7.png" alt="Сливочно-лимонное с карамельной присыпкой" width="267" height="267">
           <p class="item-catalog__price">
             375 ₽ /
             <span class="item-catalog__weight">кг</span>
@@ -229,7 +231,7 @@
           </a>
         </li>
         <li class="catalog__item item-catalog flag flag_hit">
-          <img class="item-catalog__img" src="img/prod1.jpg" alt="Мороженка..." width="267" height="267">
+          <img class="item-catalog__img" src="img/product8.png" alt="Сливочное с шоколадной стружкой" width="267" height="267">
           <p class="item-catalog__price">
             320 ₽ /
             <span class="item-catalog__weight">кг</span>
@@ -240,7 +242,7 @@
           </a>
         </li>
         <li class="catalog__item item-catalog flag flag_hit">
-          <img class="item-catalog__img" src="img/prod1.jpg" alt="Мороженка..." width="267" height="267">
+          <img class="item-catalog__img" src="img/product9.png" alt="Сливочно-ванильное с кусочками шоколада" width="267" height="267">
           <p class="item-catalog__price">
             440 ₽ /
             <span class="item-catalog__weight">кг</span>
@@ -251,7 +253,7 @@
           </a>
         </li>
         <li class="catalog__item item-catalog flag flag_hit">
-          <img class="item-catalog__img" src="img/prod1.jpg" alt="Мороженка..." width="267" height="267">
+          <img class="item-catalog__img" src="img/product10.png" alt="Сливочноe с ментоловым сиропом" width="267" height="267">
           <p class="item-catalog__price">
             435 ₽ /
             <span class="item-catalog__weight">кг</span>
@@ -262,7 +264,7 @@
           </a>
         </li>
         <li class="catalog__item item-catalog flag flag_hit">
-          <img class="item-catalog__img" src="img/prod1.jpg" alt="Мороженка..." width="267" height="267">
+          <img class="item-catalog__img" src="img/product11.png" alt="Сливочное с кусочками черного шоколада" width="267" height="267">
           <p class="item-catalog__price">
             355 ₽ /
             <span class="item-catalog__weight">кг</span>
@@ -273,7 +275,7 @@
           </a>
         </li>
         <li class="catalog__item item-catalog flag flag_hit">
-          <img class="item-catalog__img" src="img/prod1.jpg" alt="Мороженка..." width="267" height="267">
+          <img class="item-catalog__img" src="img/product12.png" alt="Сливочное с мятным сиропом" width="267" height="267">
           <p class="item-catalog__price">
             420 ₽ /
             <span class="item-catalog__weight">кг</span>
@@ -354,7 +356,7 @@
       </li>
     </ul>
     <p class="author">
-      <img class="author__img" width="108" height="39" alt="Лотип ХТМЛ Академии">
+      <img class="author__img" src="img/htmlLogo.svg" width="108" height="39" alt="Лотип ХТМЛ Академии">
       Сделано в <a class="author__link" href="htmlacademy.ru">HTML Academy</a> © 2019
     </p>
   </footer>
