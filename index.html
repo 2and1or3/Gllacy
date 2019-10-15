@@ -9,94 +9,88 @@
 </head>
 <body class="page">
   <header class="header container">
-    <div class="top-header">
-      <nav class="header__nav nav-header">
-        <a>
-          <img class="header-nav__logo" src="img/gllacy.svg" width="154" height="64" alt="Логотип магазина Глейси">
-        </a>
-        <ul class="nav-header__list">
-          <li class="nav-header__item">
-            <a class="nav-header__link" href="catalog.html">
-              Каталог
-            </a>
-            <ul class="catalog-list">
-              <li class="catalog-list__item">
-                <a class="catalog-list__link catalog-list__link_nice" href="catalog.html">
-                  Новинки
-                </a>
-              </li>
-              <li class="catalog-list__item">
-                <a class="catalog-list__link" href="catalog.html">
-                  Сливочное
-                </a>
-              </li>
-              <li class="catalog-list__item">
-                <a class="catalog-list__link" href="catalog.html">
-                  Щербеты
-                </a>
-              </li>
-              <li class="catalog-list__item">
-                <a class="catalog-list__link" href="catalog.html">
-                  Фруктовый лед
-                </a>
-              </li>
-              <li class="catalog-list__item">
-                <a class="catalog-list__link" href="catalog.html">
-                  Мелорин
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-header__item">
-            <a class="nav-header__link" href="#">
-              Доставка и оплата
-            </a>
-          </li>
-          <li class="nav-header__item">
-            <a class="nav-header__link" href="#">
-              О Компании
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <p class="search header__search">
-        <a class="search__link" href="page-search.html" aria-label="Перейти на страницу поиска"></a>
-        <span class="transparent-area search__transparent-area">
-          <label class="search__window">
-            <span class="visually-hidden">Окно поиска</span>
-            <input class="search__input input" type="search" placeholder="Что ищем?" name="search">
-          </label>
-        </span>
-      </p>
-      <div class="log header__log">
-        <svg class="log__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
+    <nav class="header__nav">
+      <a class="header__logo">
+        <img src="img/gllacy.svg" width="154" height="64" alt="Логотип магазина Глейси">
+      </a>
+      <ul class="header__list">
+        <li class="header__item">
+          <a class="header__link" href="catalog.html">
+            Каталог
+          </a>
+          <ul class="sub-list">
+            <li class="sub__item">
+              <a class="sub__link sub__link_nice" href="catalog.html">
+                Новинки
+              </a>
+            </li>
+            <li class="sub__item">
+              <a class="sub__link" href="catalog.html">
+                Сливочное
+              </a>
+            </li>
+            <li class="sub__item">
+              <a class="sub__link" href="catalog.html">
+                Щербеты
+              </a>
+            </li>
+            <li class="sub__item">
+              <a class="sub__link" href="catalog.html">
+                Фруктовый лед
+              </a>
+            </li>
+            <li class="sub__item">
+              <a class="sub__link" href="catalog.html">
+                Мелорин
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">
+            Доставка и оплата
+          </a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">
+            О Компании
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <p class="search header__search">
+      <a class="search__link" href="page-search.html" aria-label="Перейти на страницу поиска"></a>
+      <span class="search__holder">
+        <label class="search__window">
+          <span class="visually-hidden">Окно поиска</span>
+          <input class="search__input input" type="search" placeholder="Что ищем?" name="search">
+        </label>
+      </span>
+    </p>
+    <div class="login header__login">
+      <a class="login__link" href="enter.html">
+        <svg class="login__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
           <g fill="#FFF">
             <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
             <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z" />
           </g>
         </svg>
-        <a class="log__link" href="enter.html">
-          <svg class="log__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
-            <g fill="#FFF">
-              <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
-              <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z" />
-            </g>
-          </svg>
-          Вход
-        </a>
-        <div class="transparent-area log__transparent-area">
-          <form class="form-log header__form-log" action="https://echo.htmlacademy.ru" method="get">
-            <input class="form-log__input input" type="email" placeholder="Электронная почта" name="email">
-            <input class="form-log__input input" type="password" placeholder="Пароль" name="pass">
-            <button class="button form-log__button" type="submit">Войти</button>
-            <ul class="form-log__list">
-              <li class="form-log__item"><a class="form-log__link" href="pass.html">Забыли пароль?</a></li>
-              <li class="form-log__item"><a class="form-log__link" href="new.html">Новая регистрация</a></li>
-            </ul>
-          </form>
-        </div>
+        Вход
+      </a>
+      <div class="login__holder">
+        <form class="form login__form" action="https://echo.htmlacademy.ru" method="get">
+          <input class="form__input input" type="email" placeholder="Электронная почта" name="email">
+          <input class="form__input input" type="password" placeholder="Пароль" name="pass">
+          <button class="button form__button" type="submit">Войти</button>
+          <ul class="form__list">
+            <li class="form__item"><a class="form__link" href="pass.html">Забыли пароль?</a></li>
+            <li class="form__item"><a class="form__link" href="new.html">Новая регистрация</a></li>
+          </ul>
+        </form>
       </div>
-      <div class="cart header__cart">
+    </div>
+    <div class="cart header__cart">
+      <a class="cart__link" href="to-cart">
         <svg class="cart__svg" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
           <g fill="#FFF">
             <path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z" />
@@ -104,77 +98,68 @@
             <circle cx="15.984" cy="18" r="2" />
           </g>
         </svg>
-        <a class="cart__link" href="to-cart">
-          <svg class="cart__svg" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
-            <g fill="#FFF">
-              <path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z" />
-              <circle cx="6.984" cy="18" r="2" />
-              <circle cx="15.984" cy="18" r="2" />
-            </g>
-          </svg>
-          Пусто
-        </a>
-      </div>
+        Пусто
+      </a>
     </div>
     <p class="org-info header__org-info">
       С 10 до 20, ежедневно
       <a class="org-info__phone" href="tel:+8(812)450-25-25">8 812 450-25-25</a>
     </p>
   </header>
-  <main class="main-page content">
+  <main class="main-page">
     <div class="container">
       <h1 class="visually-hidden">Главная страница Глейси</h1>
       <section class="slider">
-        <nav class="slider__nav nav-slider">
-          <ul class="nav-slider__list">
-            <li class="nav-slider__item"><a class="nav-slider__link nav-slider__link_current" aria-label="Первый слайд" href="#"></a></li>
-            <li class="nav-slider__item"><a class="nav-slider__link" aria-label="Второй слайд" href="#"></a></li>
-            <li class="nav-slider__item"><a class="nav-slider__link" aria-label="Третий слайд" href="#"></a></li>
+        <nav class="slider__nav buttons buttons_round">
+          <ul class="buttons__list">
+            <li class="buttons__item"><button class="buttons__link buttons__link_current" aria-label="Первый слайд"></button></li>
+            <li class="buttons__item"><button class="buttons__link" aria-label="Второй слайд"></button></li>
+            <li class="buttons__item"><button class="buttons__link" aria-label="Третий слайд"></button></li>
           </ul>
         </nav>
-        <article class="slider__slide slide-slider slider__slide_current">
-          <div class="slider__img slider__img_1"></div>
-          <h2 class="slide-slider__title">
+        <article class="slide slide_current">
+          <div class="slide__img slide__img_1"></div>
+          <h2 class="slide__title">
             Крем-брюле и пломбир
             с малиновым джемом
           </h2>
-          <a class="button slider__button" href="catalog.htlm">Давайте оба!</a>
+          <a class="button slide__button" href="catalog.htlm">Давайте оба!</a>
         </article>
-        <article class="slider__slide slide-slider">
-          <div class="slider__img slider__img_2"></div>
-          <h2 class="slide-slider__title">
+        <article class="slide">
+          <div class="slide__img slide__img_2"></div>
+          <h2 class="slide__title">
             Шоколадный пломбир
             и лимонный сорбет
           </h2>
-          <a class="button slider__button" href="catalog.htlm">Давайте оба!</a>
+          <a class="button slide__button" href="catalog.htlm">Давайте оба!</a>
         </article>
-        <article class="slider__slide slide-slider">
-          <div class="slider__img slider__img_3"></div>
-          <h2 class="slide-slider__title">
+        <article class="slide">
+          <div class="slide__img slide__img_3"></div>
+          <h2 class="slide__title">
             Пломбир с помадкой
             и клубничный щербет
           </h2>
-          <a class="button slider__button" href="catalog.htlm">Давайте оба!</a>
+          <a class="button slide__button" href="catalog.htlm">Давайте оба!</a>
         </article>
       </section>
       <section class="features">
         <h2 class="visually-hidden">Спецпредложения</h2>
-        <ul class="feature__list">
-          <li class="feature__item feature__item_bg_raspber item-feature">
-            <h3 class="item-feature__title">Малинка даром!</h3>
-            <p class="item-feature__text">
+        <ul class="features__list">
+          <li class="features__item feature_raspber feature">
+            <h3 class="feature__title">Малинка даром!</h3>
+            <p class="feature__text">
               При покупке 2 кг любого фруктового мороженого, добавим
               в ваш заказ банку малинового варенья бесплатно.
             </p>
-            <a class="button item-feature__button" href="catalog.html">Хочу варенье!</a>
+            <a class="button feature__button" href="catalog.html">Хочу варенье!</a>
           </li>
-          <li class="feature__item feature__item_bg_chock item-feature">
-            <h3 class="item-feature__title">Шоколадки даром!</h3>
-            <p class="item-feature__text">
+          <li class="features__item feature_chock feature">
+            <h3 class="feature__title">Шоколадки даром!</h3>
+            <p class="feature__text">
               При покупке 2 кг пломбира, добавим в ваш заказ упаковку
               вкуснейшей шоколадной присыпки совершенно бесплатно.
             </p>
-            <a class="button item-feature__button" href="catalog.html">Хочу шоколадки!
+            <a class="button feature__button" href="catalog.html">Хочу шоколадки!
             </a>
           </li>
         </ul>
@@ -182,69 +167,69 @@
       <section class="main-page__catalog">
         <h2 class="visually-hidden">Лучшее из каталога</h2>
         <ul class="catalog__list">
-          <li class="catalog__item item-catalog flag flag_hit">
-            <img class="item-catalog__img" src="img/product1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
-            <p class="item-catalog__price">
-              310&#8381;<span class="item-catalog__weight">/кг</span>
+          <li class="catalog-item catalog-item_hit">
+            <img class="catalog-item__img" src="img/product1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+            <p class="catalog-item__price">
+              310&#8381;<span class="catalog-item__weight">/кг</span>
             </p>
-            <h4 class="item-catalog__title">
-              <a class="item-catalog__link link" href="product.html">
+            <h4 class="catalog-item__title">
+              <a class="catalog-item__link link" href="product.html">
                 Сливочное с апельсиновым
                 джемом и цитрусовой стружкой
               </a>
             </h4>
-            <p class="item-catalog__bottom-area">
-              <a class="item-catalog__button button" href="#">Быстрый просмотр</a>
+            <p class="catalog-item__bottom-area">
+              <a class="catalog-item__button button" href="#">Быстрый просмотр</a>
             </p>
           </li>
-          <li class="catalog__item item-catalog flag flag_hit">
-            <img class="item-catalog__img" src="img/product2.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
-            <p class="item-catalog__price">
-              380&#8381;<span class="item-catalog__weight">/кг</span>
+          <li class="catalog-item catalog-item_hit">
+            <img class="catalog-item__img" src="img/product2.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
+            <p class="catalog-item__price">
+              380&#8381;<span class="catalog-item__weight">/кг</span>
             </p>
-            <h4 class="item-catalog__title">
-              <a class="item-catalog__link link" href="product.html">
+            <h4 class="catalog-item__title">
+              <a class="catalog-item__link link" href="product.html">
                 Сливочно-кофейное с кусочками
                 шоколада
               </a>
             </h4>
-            <p class="item-catalog__bottom-area">
-              <a class="item-catalog__button button" href="#">Быстрый просмотр</a>
+            <p class="catalog-item__bottom-area">
+              <a class="catalog-item__button button" href="#">Быстрый просмотр</a>
             </p>
           </li>
-          <li class="catalog__item item-catalog flag flag_hit">
-            <img class="item-catalog__img" src="img/product3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
-            <p class="item-catalog__price">
-              355&#8381;<span class="item-catalog__weight">/кг</span>
+          <li class="catalog-item catalog-item_hit">
+            <img class="catalog-item__img" src="img/product3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
+            <p class="catalog-item__price">
+              355&#8381;<span class="catalog-item__weight">/кг</span>
             </p>
-            <h4 class="item-catalog__title">
-              <a class="item-catalog__link link" href="product.html">
+            <h4 class="catalog-item__title">
+              <a class="catalog-item__link link" href="product.html">
                 Сливочно-клубничное с
                 присыпкой из белого шоколада
               </a>
             </h4>
-            <p class="item-catalog__bottom-area">
-              <a class="item-catalog__button button" href="#">Быстрый просмотр</a>
+            <p class="catalog-item__bottom-area">
+              <a class="catalog-item__button button" href="#">Быстрый просмотр</a>
             </p>
           </li>
-          <li class="catalog__item item-catalog flag flag_hit">
-            <img class="item-catalog__img" src="img/product4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
-            <p class="item-catalog__price">
-              415&#8381;<span class="item-catalog__weight">/кг</span>
+          <li class="catalog-item catalog-item_hit">
+            <img class="catalog-item__img" src="img/product4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
+            <p class="catalog-item__price">
+              415&#8381;<span class="catalog-item__weight">/кг</span>
             </p>
-            <h4 class="item-catalog__title">
-              <a class="item-catalog__link link" href="product.html">
+            <h4 class="catalog-item__title">
+              <a class="catalog-item__link link" href="product.html">
                 Сливочное крем-брюле с
                 карамельной подливкой
               </a>
             </h4>
-            <p class="item-catalog__bottom-area">
-              <a class="item-catalog__button button" href="#">Быстрый просмотр</a>
+            <p class="catalog-item__bottom-area">
+              <a class="catalog-item__button button" href="#">Быстрый просмотр</a>
             </p>
           </li>
         </ul>
       </section>
-      <section class="about about_waffle">
+      <section class="about">
         <h2 class="visually-hidden">О нас</h2>
         <p class="about__lead">
           Магазин Глэйси&nbsp;&mdash; это онлайн- и&nbsp;офлайн-магазин по&nbsp;продаже мороженого собственного производства на&nbsp;развес
@@ -274,10 +259,10 @@
         </ul>
       </section>
       <div class="news-container">
-        <article class="blog__item item-blog item-blog_article-1">
-          <p class="item-blog__type">Новое в нашем блоге</p>
-          <h3 class="item-blog__title">
-            <a class="item-blog__link link" href="#">
+        <article class="blog-item blog-item_article-1">
+          <p class="blog-item__type">Новое в нашем блоге</p>
+          <h3 class="blog-item__title">
+            <a class="blog-item__link link" href="#">
               10 способов сервировки
               фруктовых щербетов к
               столу
@@ -290,9 +275,9 @@
             всего самого вкусного, что у нас происходит. Обещаем не спамить
             и&nbsp;не слать всякой ненужной ерунды. Честно =)
           </p>
-          <form class="mailing__form form-mailing" action="https://echo.htmlacademy.ru" method="get">
-            <input class="form-mailing__input input" type="text" placeholder="Электронная почта" name="mailto">
-            <button class="form-mailing__button button" type="submit">Отправить</button>
+          <form class="mailing__form simple-form" action="https://echo.htmlacademy.ru" method="get">
+            <input class="simple-form__input input" type="text" placeholder="Электронная почта" name="mailto">
+            <button class="simple-form__button button" type="submit">Отправить</button>
           </form>
         </article>
       </div>
@@ -301,21 +286,21 @@
       <h2 class="visually-hidden">Как до нас добраться : ул. Большая Конюшенная
         19/8, Санкт-Петербург</h2>
       <div class="container map__container">
-        <article class="adress">
-          <p class="adress__description">
+        <article class="address">
+          <p class="address__description">
             Адрес главного офиса
             и&nbsp;офлайн-магазина:
           </p>
-          <p class="adress__place">
+          <p class="address__place">
             ул. Большая Конюшенная
             19/8, Санкт-Петербург
           </p>
-          <span class="adress__call">Для заказов по телефону:</span>
-          <p class="adress__phone">
-            <a class="adress__phone-number" href="tel:+8(812)450-25-25">8 812 450-25-25</a>
+          <span class="address__call">Для заказов по телефону:</span>
+          <p class="address__phone">
+            <a class="address__phone-number" href="tel:+8(812)450-25-25">8 812 450-25-25</a>
             (с 10 до 20 ежедневно)
           </p>
-          <a class="adress__button button">Форма обратной связи</a>
+          <a class="address__button button">Форма обратной связи</a>
         </article>
       </div>
       <iframe class="map__iframe"
@@ -326,7 +311,7 @@
   <footer class="footer container">
     <ul class="social">
       <li class="social__item">
-        <a class="social__link social__link_tw" href="#">
+        <a class="social__link" href="#">
           <span class="visually-hidden">Twitter</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
             <path fill="rgba(255, 255, 255, 0.8)"
@@ -370,34 +355,30 @@
         </a>
       </li>
     </ul>
-    <div class="footer-links">
-      <ul class="footer-links__list">
-        <li class="footer-links__item">
-          <a class="footer-links__link link" href="#">
-            <span class="footer-links__link_like">Для поставщиков</span>
-          </a>
-        </li>
-        <li class="footer-links__item">
-          <a class="footer-links__link link" href="#">
-            О производстве
-          </a>
-        </li>
-      </ul>
-      <ul class="footer-links__list">
-        <li class="footer-links__item">
-          <a class="footer-links__link link" href="#">
-            Наши документы
-          </a>
-        </li>
-        <li class="footer-links__item">
-          <a class="footer-links__link link" href="#">
-            Экологические стандарты
-          </a>
-        </li>
-      </ul>
-    </div>
+    <ul class="footer-links">
+      <li class="footer-links__item">
+        <a class="footer-links__link link" href="#">
+          <span class="footer-links__link_like">Для поставщиков</span>
+        </a>
+      </li>
+      <li class="footer-links__item">
+        <a class="footer-links__link link" href="#">
+          Наши документы
+        </a>
+      </li>
+      <li class="footer-links__item">
+        <a class="footer-links__link link" href="#">
+          О производстве
+        </a>
+      </li>
+      <li class="footer-links__item">
+        <a class="footer-links__link link" href="#">
+          Экологические стандарты
+        </a>
+      </li>
+    </ul>
     <p class="author">
-      <img class="author__img" src="img/htmlLogo.svg" width="109" height="38" alt="Лотип ХТМЛ Академии">
+      <img class="author__img" src="img/htmllogo.svg" width="109" height="38" alt="Лотип ХТМЛ Академии">
       Сделано в <a class="author__link link" href="htmlacademy.ru">HTML Academy</a> © 2019
     </p>
   </footer>
